@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bookstore</title>
+  <link rel="stylesheet" href="bookstore_design.css"> <!-- Link to external CSS file -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      width: 200px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        margin-bottom: 20px;
+        width: 80%;
+      }
+    }
+
+    footer {
+      background-color: #007bff;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Welcome to Your Online Bookstore</h1>
+    <p>Manage your book collection effortlessly.</p>
+  </div>
+
+  <div class="container">
+    <h1>What would you like to do?</h1>
+
+    <div class="button-container">
+      <a href="main.php" class="btn">View Available Books</a>
+      <a href="form.php" class="btn">Add a New Book</a>
+      <a href="search.php" class="btn">Search for Books</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Online Bookstore. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
