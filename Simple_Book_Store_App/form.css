@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0; /* Remove default margin */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+  position: fixed; /* Fixed position */
+  top: 0; /* At the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Stay above other content */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* Form container styling */
+.form-container {
+  width: 400px; /* Width of the form */
+  margin: 100px auto; /* Centering with margin from top */
+  padding: 30px; /* Padding inside the container */
+  background: white; /* Background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Form heading styling */
+h1 {
+  text-align: center;
+  color: #333; /* Heading color */
+  margin-bottom: 20px; /* Margin below heading */
+}
+
+/* Styling for form labels */
+label {
+  display: block;
+  margin-bottom: 10px; /* Margin below labels */
+  font-weight: bold; /* Bold font for labels */
+}
+
+/* Styling for form inputs and select elements */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside inputs */
+  margin-bottom: 20px; /* Margin below inputs */
+  border: 1px solid #ddd; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+  background-color: #4caf50; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor change on hover */
+  width: 100%; /* Full width */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

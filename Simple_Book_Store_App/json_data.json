@@ -1,0 +1,30 @@
+[
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "available": false,
+        "pages": "350",
+        "isbn": "9780451524935"
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "available": true,
+        "pages": 281,
+        "isbn": "9780060935467"
+    },
+    {
+        "title": "Bangla",
+        "author": "Kazi Nazrul",
+        "available": true,
+        "pages": "500",
+        "isbn": " 9785267006323"
+    },
+    {
+        "title": "Bangla",
+        "author": "Kazi Nazrul",
+        "available": true,
+        "pages": "500",
+        "isbn": " 9785267006323"
+    }
+]

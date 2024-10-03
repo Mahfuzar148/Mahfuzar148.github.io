@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #1961ae;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Book List */
+.book-list {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.book-table th,
+.book-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.book-table th {
+  background-color: #f2f2f2;
+}
+
+.book-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.book-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn {
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  min-width: 100px; /* Minimum width to prevent breaking */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow if necessary */
+  text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
+/* Button for Delete */
+.btn-delete {
+  background-color: #dc3545; /* Red for delete */
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* On hover effect for delete button */
+.btn-delete:hover {
+  background-color: #c82333; /* Darker red */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-edit {
+  background-color: #ffc107; /* Yellow for edit */
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800; /* Darker yellow */
+}
+
+/* Edit Form */
+.form-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 151, 235, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cancel {
+  background-color: #6c757d; /* Gray for cancel */
+}
+
+.cancel:hover {
+  background-color: #5a6268; /* Darker gray */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show links when toggled */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  /* Stack buttons in column */
+  td .btn {
+    display: block;
+    width: 90%; /* Reduce button width to ensure it fits within table */
+    margin-right: 0;
+    margin-bottom: 10px; /* Add a small gap between stacked buttons */
+    max-width: 100%; /* Ensure buttons don't exceed table width */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+  }
+
+  td .btn:last-child {
+    margin-bottom: 0; /* Remove margin from the last button */
+  }
+
+  /* Adjust table column to avoid overflow */
+  .book-table td {
+    word-wrap: break-word;
+  }
+  nav label.jumbotron-button {
+    display: none; /* Hide the button on larger screens */
+    width: 100%; /* Adjust button width to fit on smaller screens */
+    margin-bottom: 10px; /* Add a small gap between button and list */
+  }
+}
